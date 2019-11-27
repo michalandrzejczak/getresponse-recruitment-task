@@ -1,0 +1,16 @@
+@import '../fonts/_fonts.scss';
+@import '_variables.scss';
+
+html, body {
+    background-color: $background-color;
+    font-family: "Arial Rounded MT Regular", Arial;
+
+    * {
+        transition: all 0.2s ease;
+    }
+
+    a {
+        text-decoration: none;
+        color: $font-color;
+    }
+}
