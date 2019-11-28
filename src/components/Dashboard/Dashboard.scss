@@ -1,20 +1,14 @@
 @import '../../scss/_variables.scss';
 @import '../../scss/main.scss';
 
-header {
-    height: 79px;
-    background-color: $block-background-color;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);
-    display: flex;
-    justify-content: center;
+section#dashboard {
+    width: 978px;
+    background-color: $background-color;
+    border: none;
 
-    .wrapper {
+    header.dashboard_header {
+        background-color: inherit;
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        width: 978-118px;
-        max-width: 978px;
-        margin-left: 118px;
-        border-left: 1px solid $header-border-color;
     }
 }

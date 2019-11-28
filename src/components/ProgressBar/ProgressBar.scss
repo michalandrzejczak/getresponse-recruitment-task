@@ -1,0 +1,16 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/main.scss';
+
+.bar {
+    .bar_title {
+        text-transform: uppercase;
+        font-family: "Helvetica Neue LT Std 55 Roman";
+        font-size: 9px;
+        margin-left: 4px;
+        color: transparentize($font-color, .45);
+    }
+
+    .bar_wrapper {
+        margin-top: 7px;
+    }
+}
