@@ -1,12 +1,15 @@
 import './App.scss';
 import Header from '../Header'
-import React from "react";
+import Main from '../Main';
+import React from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
     return (
-        <div>
+        <Router>
             <Header/>
-        </div>
+            <Main/>
+        </Router>
     );
 }
 

@@ -1,0 +1,45 @@
+@import '../../scss/_variables.scss';
+
+.xe {
+    color: lavender;
+}
+
+.nav {
+    font-family: "Helvetica Neue LT Std 65 Medium", sans-serif;
+    text-transform: uppercase;
+    color: $header-font-color;
+
+    .nav_link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 79px;
+        padding: 0 16px;
+
+        &:first-child {
+            margin-left: 16px;
+        }
+
+        &:hover {
+            color: darken($header-font-color, 20%);
+        }
+
+        &.nav_link-active {
+            color: $orange-color;
+
+            &::after {
+                content: "";
+                width: 25px;
+                border-bottom: 2px solid transparentize($orange-color, 0.56);
+                position: absolute;
+                transform: translateY(15px);
+                transition: all 0.2s ease;
+            }
+
+            &:hover::after {
+                width: 50px;
+            }
+        }
+    }
+
+}

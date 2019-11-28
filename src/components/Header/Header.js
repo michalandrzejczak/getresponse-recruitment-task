@@ -1,24 +1,25 @@
 import React from 'react';
 import './Header.scss';
-import ChevronDown from '../../img/svg/ChevronDown';
-import user from '../../img/user.jpg';
+import Nav from '../Nav';
+import Profile from '../Profile';
+import avatar from '../../img/user.jpg';
+
 
 function Header() {
+    const user = {
+        first_name: 'Olivia',
+        last_name: 'Wilde',
+        avatar: avatar,
+        get full_name() {
+            return `${this.first_name} ${this.last_name}`;
+        }
+    };
+
     return (
         <header>
             <div className="wrapper">
-                <nav className="nav">
-                    <a href="#dashboard" className="nav_link nav_link-active">Dashboard</a>
-                    <a href="#recipes">Recipes</a>
-                    <a href="#challenge">Challenge</a>
-                </nav>
-                <span className="profile">
-                    <div className="profile_image">
-                        <img src={user} alt="User profile"/>
-                    </div>
-                    <span className="profile_name">Olivia Wilde</span>
-                    <ChevronDown/>
-                </span>
+                <Nav />
+                <Profile user={user}/>
             </div>
         </header>
     );

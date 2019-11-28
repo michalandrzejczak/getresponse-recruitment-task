@@ -1,20 +1,16 @@
 @import '../../scss/_variables.scss';
 @import '../../scss/main.scss';
 
-header {
-    height: 79px;
-    background-color: $block-background-color;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.13);
+main {
     display: flex;
     justify-content: center;
+    padding: 35px 0;
 
     .wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 978-118px;
+        width: 978px;
         max-width: 978px;
-        margin-left: 118px;
-        border-left: 1px solid $header-border-color;
     }
 }
