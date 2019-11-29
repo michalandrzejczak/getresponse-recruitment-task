@@ -6,12 +6,13 @@ import ProteinSelect from '../ProteinSelect';
 
 function Dashboard() {
     const week = 7;
+    const maxWeek = 12;
 
     return (
         <section id="dashboard">
             <header className="dashboard_header">
-                <ProgressBar value={week} max={12}/>
-                <WeekSlider week={week}/>
+                <ProgressBar value={week} max={maxWeek}/>
+                <WeekSlider week={week} max={maxWeek}/>
                 <ProteinSelect/>
             </header>
             <div className="dashboard_plan">

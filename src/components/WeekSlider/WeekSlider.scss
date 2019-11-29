@@ -1,0 +1,41 @@
+@import '../../scss/main.scss';
+@import '../../scss/_variables.scss';
+
+.week-slider_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .week-slider_title {
+        color: $orange-color;
+        font-family: "Helvetica Neue LT Std 55 Roman", sans-serif;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 46px;
+        margin: 0 44px;
+        user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .week-slider_arrow-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 42px;
+        border-radius: 8px;
+        border: 1px solid $slider-arrow-border-color;
+        transition: all 0.1s ease;
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid darken($slider-arrow-border-color, 10%);
+            box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}

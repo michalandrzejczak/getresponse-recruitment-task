@@ -4,7 +4,7 @@
 .bar {
     .bar_title {
         text-transform: uppercase;
-        font-family: "Helvetica Neue LT Std 55 Roman";
+        font-family: "Helvetica Neue LT Std 55 Roman", sans-serif;;
         font-size: 9px;
         margin-left: 4px;
         color: transparentize($font-color, .45);

@@ -1,0 +1,19 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/main.scss';
+
+.protein-select_wrapper {
+    .protein-select_title {
+        text-transform: uppercase;
+        font-family: "Helvetica Neue LT Std 55 Roman", sans-serif;;
+        font-size: 9px;
+        margin-left: 4px;
+        color: transparentize($font-color, .45);
+    }
+    .protein-select_options-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+    }
+
+}
