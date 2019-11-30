@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProgressBar.scss';
 import BarStep from "./BarStep";
-import styleVariables from '../../scss/_variables.scss';
+import styleVariables from '../../../../scss/_variables.scss';
 
 function ProgressBar({value, max}) {
     const width          = `${max * 19}px`;

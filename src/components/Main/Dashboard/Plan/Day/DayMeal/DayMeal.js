@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './DayMeal.scss';
-import mealCheckedIcon from '../../../../img/meal-checked-icon.png';
+import mealCheckedIcon from '../../../../../../img/meal-checked-icon.png';
 
 function DayMeal({name, img, checked = false}) {
     const [checkedState, setCheckedState] = useState(checked);
@@ -12,7 +12,7 @@ function DayMeal({name, img, checked = false}) {
     return (
         <div className="day_cell day_cell-meal" title="Click to mark checked" onClick={toggleChecked}>
             {checkedState && <img src={mealCheckedIcon} alt="Meal checked" className="day_cell-meal_checked"/>}
-            <span className={checkedState && 'day_cell-meal_name-padding'}>
+            <span className={checkedState ? 'day_cell-meal_name-padding' : ''}>
                 {name}
             </span>
             {img &&

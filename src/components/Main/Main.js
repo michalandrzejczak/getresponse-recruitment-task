@@ -1,7 +1,7 @@
 import React from 'react';
 import './Main.scss';
 import { Switch, Route } from "react-router-dom";
-import Dashboard from '../Dashboard';
+import Dashboard from './Dashboard';
 import Recipes from '../Recipes';
 import Challenge from '../Challenge';
 import Error404 from '../Error404';

@@ -1,12 +1,12 @@
 import React from 'react';
 import './Dashboard.scss';
-import ProgressBar from '../ProgressBar';
-import WeekSlider from '../WeekSlider';
-import ProteinSelect from '../ProteinSelect';
-import Plan from '../Plan';
-import FooterButton from '../FooterButton';
-import androidIcon from '../../img/android-icon.png';
-import iosIcon from '../../img/ios-icon.png';
+import ProgressBar from './ProgressBar';
+import WeekSlider from './WeekSlider';
+import ProteinSelect from './ProteinSelect';
+import Plan from './Plan';
+import FooterButton from './FooterButton';
+import androidIcon from '../../../img/android-icon.png';
+import iosIcon from '../../../img/ios-icon.png';
 
 function Dashboard() {
     const week    = 7;

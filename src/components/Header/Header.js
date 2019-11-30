@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.scss';
-import Nav from '../Nav';
-import Profile from '../Profile';
+import Nav from './Nav';
+import Profile from './Profile';
 import avatar from '../../img/user.jpg';
 
 

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Day.scss';
 import DayMeal from './DayMeal';
-import smileIcon from '../../../img/smile-icon.png';
-import workoutDoneIcon from '../../../img/dumbbell-icon-done.png';
-import workoutUndoneIcon from '../../../img/dumbbell-icon-undone.png';
-import bodeShakeImg from '../../../img/bode-shake.png';
+import smileIcon from '../../../../../img/smile-icon.png';
+import workoutDoneIcon from '../../../../../img/dumbbell-icon-done.png';
+import workoutUndoneIcon from '../../../../../img/dumbbell-icon-undone.png';
+import bodeShakeImg from '../../../../../img/bode-shake.png';
 
 
 function Day({value, today = false, highCarb = false, guiltFree = false, first = false, workoutDone = false}) {

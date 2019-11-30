@@ -3,7 +3,7 @@ import React from 'react';
 function Recipes() {
     return (
         <section id="recipes">
-            Recipes
+            Recipes route content
         </section>
     );
 }

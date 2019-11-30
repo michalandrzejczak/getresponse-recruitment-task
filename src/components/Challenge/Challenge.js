@@ -3,7 +3,7 @@ import React from 'react';
 function Challenge() {
     return (
         <section id="challenge">
-            Challenge
+            Challenge route content
         </section>
     );
 }

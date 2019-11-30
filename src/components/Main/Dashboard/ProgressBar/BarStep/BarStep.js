@@ -1,6 +1,6 @@
 import React from 'react';
 import './BarStep.scss';
-import styleVariables from '../../../scss/_variables.scss';
+import styleVariables from '../../../../../scss/_variables.scss';
 
 
 function BarStep({value, color = "#dbdbdb", fill = false, current, max}) {

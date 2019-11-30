@@ -1,16 +1,16 @@
 import React from 'react';
 import './ProteinSelect.scss';
 import ProteinOption from './ProteinOption';
-import broccoliIcon from '../../img/protein-select-icons/protein-broccoli.png';
-import cheeseIcon from '../../img/protein-select-icons/protein-cheese.png';
-import steakIcon from '../../img/protein-select-icons/protein-steak.png';
-import fishIcon from '../../img/protein-select-icons/protein-fish.png';
-import thanksgivingIcon from '../../img/protein-select-icons/protein-thanksgiving.png';
-import broccoliIconDisabled from '../../img/protein-select-icons/protein-broccoli-disabled.png';
-import cheeseIconDisabled from '../../img/protein-select-icons/protein-cheese-disabled.png';
-import steakIconDisabled from '../../img/protein-select-icons/protein-steak-disabled.png';
-import fishIconDisabled from '../../img/protein-select-icons/protein-fish-disabled.png';
-import thanksgivingIconDisabled from '../../img/protein-select-icons/protein-thanksgiving-disabled.png';
+import broccoliIcon from '../../../../img/protein-select-icons/protein-broccoli.png';
+import cheeseIcon from '../../../../img/protein-select-icons/protein-cheese.png';
+import steakIcon from '../../../../img/protein-select-icons/protein-steak.png';
+import fishIcon from '../../../../img/protein-select-icons/protein-fish.png';
+import thanksgivingIcon from '../../../../img/protein-select-icons/protein-thanksgiving.png';
+import broccoliIconDisabled from '../../../../img/protein-select-icons/protein-broccoli-disabled.png';
+import cheeseIconDisabled from '../../../../img/protein-select-icons/protein-cheese-disabled.png';
+import steakIconDisabled from '../../../../img/protein-select-icons/protein-steak-disabled.png';
+import fishIconDisabled from '../../../../img/protein-select-icons/protein-fish-disabled.png';
+import thanksgivingIconDisabled from '../../../../img/protein-select-icons/protein-thanksgiving-disabled.png';
 
 function ProteinSelect() {
     return (
