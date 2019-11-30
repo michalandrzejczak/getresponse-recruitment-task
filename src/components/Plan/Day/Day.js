@@ -13,7 +13,7 @@ function Day({value, today = false, highCarb = false, guiltFree = false, first =
     const mealsAPI = {
         lowCarb:  {
             first:  {
-                name: 'Bod•ē Shake',
+                name: 'Bod·ē Shake',
                 img:  bodeShakeImg,
             },
             second: {
@@ -25,7 +25,7 @@ function Day({value, today = false, highCarb = false, guiltFree = false, first =
                 img:  null,
             },
             forth:  {
-                name: 'Bod•ē Burn with Mozzarella and Tomato Slices',
+                name: 'Bod·ē Burn with Mozzarella and Tomato Slices',
                 img:  null,
             },
             fifth:  {
@@ -35,7 +35,7 @@ function Day({value, today = false, highCarb = false, guiltFree = false, first =
         },
         highCarb: {
             first:  {
-                name: 'Bod•ē Shake',
+                name: 'Bod·ē Shake',
                 img:  bodeShakeImg,
             },
             second: {
@@ -43,11 +43,11 @@ function Day({value, today = false, highCarb = false, guiltFree = false, first =
                 img:  null,
             },
             third:  {
-                name: 'Bod•ē Shake',
+                name: 'Bod·ē Shake',
                 img:  bodeShakeImg,
             },
             forth:  {
-                name: 'Bod•ē Burn and Whole-Wheat English Muffin with Butter Spray',
+                name: 'Bod·ē Burn and Whole-Wheat English Muffin with Butter Spray',
                 img:  null,
             },
             fifth:  {

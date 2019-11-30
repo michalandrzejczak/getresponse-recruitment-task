@@ -12,4 +12,40 @@ section#dashboard {
         justify-content: space-between;
         margin-bottom: 27px;
     }
+
+    footer.dashboard_footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 45px;
+
+        section.footer_section {
+            padding: 15px 40px;
+            color: $font-color;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:not(:last-child) {
+                border-right: 1px solid $border-color;
+            }
+
+            .footer_section_h1 {
+                font-family: "Helvetica Neue LT Std 55 Roman", sans-serif;
+                font-size: 28px;
+                padding: 0;
+                margin: 0;
+
+                .footer_section_h1-special {
+                    font-weight: 500;
+                }
+            }
+
+            .footer_section_p {
+                font-size: 14px;
+                line-height: 1.5em;
+            }
+        }
+    }
 }
