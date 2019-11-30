@@ -11,7 +11,6 @@
         font-family: "Helvetica Neue LT Std 55 Roman", sans-serif;
         font-size: 48px;
         font-weight: 400;
-        line-height: 46px;
         margin: 0 30px;
         width: 185px;
         text-align: center;
@@ -38,6 +37,20 @@
 
         &:active {
             transform: scale(0.95);
+        }
+    }
+}
+
+@media all and (max-width: $media-breakpoint) {
+    .week-slider_wrapper {
+        order: 3;
+        flex-basis: 100%;
+
+        .week-slider_title {
+            width: 124px;
+            font-size: 32px;
+            font-weight: 400;
+            margin: 0 15px;
         }
     }
 }

@@ -49,3 +49,25 @@ section#dashboard {
         }
     }
 }
+
+@media all and (max-width: $media-breakpoint) {
+    section#dashboard {
+        width: auto;
+
+        header.dashboard_header {
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+
+        // @todo to do usunięcia
+        .dashboard_plan {
+            display: none;
+        }
+
+        footer.dashboard_footer {
+            display: none;
+        }
+    }
+}

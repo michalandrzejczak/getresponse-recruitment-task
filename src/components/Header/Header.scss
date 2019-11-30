@@ -18,3 +18,14 @@
         border-left: 1px solid $header-border-color;
     }
 }
+
+@media all and (max-width: $media-breakpoint) {
+    #root>header {
+        height: auto;
+
+        .wrapper {
+            margin: 0 10px;
+            border: 0;
+        }
+    }
+}

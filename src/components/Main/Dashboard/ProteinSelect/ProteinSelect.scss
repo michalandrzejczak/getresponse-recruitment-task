@@ -15,5 +15,13 @@
         align-items: center;
         margin-top: 8px;
     }
+}
 
+@media all and (max-width: $media-breakpoint) {
+    .protein-select_wrapper {
+        order: 2;
+        .protein-select_options-wrapper {
+            margin: 0;
+        }
+    }
 }

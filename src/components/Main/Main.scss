@@ -14,3 +14,18 @@ main {
         max-width: 978px;
     }
 }
+
+@media all and (max-width: $media-breakpoint) {
+    main {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: auto;
+        }
+    }
+}

@@ -14,3 +14,11 @@
         color: transparentize($font-color, .45);
     }
 }
+
+@media all and (max-width: $media-breakpoint) {
+    .bar-step {
+        .bar-step_value {
+            margin: 0;
+        }
+    }
+}

@@ -14,3 +14,12 @@
         margin-top: 7px;
     }
 }
+
+@media all and (max-width: $media-breakpoint) {
+    .bar {
+        order: 1;
+        .bar_wrapper {
+            margin: 0;
+        }
+    }
+}

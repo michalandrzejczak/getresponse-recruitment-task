@@ -38,3 +38,30 @@
         margin: 0 10px;
     }
 }
+
+@media all and (max-width: $media-breakpoint) {
+    .profile {
+        align-self: flex-start;
+        margin: 5px 0;
+
+        .profile_dropdown {
+            order: 1;
+            width: 9px;
+            height: 9px;
+            padding: 6px;
+            border: 1px solid $border-color;
+            border-radius: 50%;
+        }
+
+        .profile_image {
+            order: 2;
+            margin-left: 5px;
+        }
+
+        .profile_name {
+            margin: 0;
+            display: none;
+        }
+    }
+
+}

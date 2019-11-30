@@ -1,4 +1,12 @@
+@import '../../../../../scss/variables';
+
 .protein-select_option{
     cursor: pointer;
     margin: 0 6px;
+}
+
+@media all and (max-width: $media-breakpoint) {
+    .protein-select_option{
+        margin: 0 2px;
+    }
 }

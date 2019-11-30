@@ -1,9 +1,5 @@
 @import '../../../scss/_variables.scss';
 
-.xe {
-    color: lavender;
-}
-
 .nav {
     font-family: "Helvetica Neue LT Std 65 Medium", sans-serif;
     text-transform: uppercase;
@@ -42,4 +38,32 @@
         }
     }
 
+}
+
+@media all and (max-width: $media-breakpoint) {
+    .nav {
+        .nav_link {
+            height: auto;
+            padding: 10px 3px;
+            font-size: 14px;
+            font-family: "Helvetica Neue LT Std 45 Light", sans-serif;
+
+            &:first-child {
+                margin: 0;
+                padding-left: -0;
+            }
+
+            &:hover {
+                color: darken($header-font-color, 20%);
+            }
+
+            &.nav_link-active {
+                color: $orange-color;
+
+                &::after {
+                    display:none;
+                }
+            }
+        }
+    }
 }
