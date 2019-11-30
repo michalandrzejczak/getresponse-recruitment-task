@@ -1,0 +1,76 @@
+@import '../../scss/_variables.scss';
+@import '../../scss/main.scss';
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    border-radius: 5px;
+    font-family: "Arial Rounded MT Regular", sans-serif;
+    font-size: 13px;
+    color: $font-color;
+    overflow: hidden;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .plan_head {
+        display: flex;
+        flex-direction: column;
+
+        .head-background {
+            background: url("../../img/plan-head-background.jpg") repeat;
+        }
+
+        .head_cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 33px;
+            min-width: 85px;
+            padding: 10px;
+            border-top: 1px solid rgba(0, 0, 0, 0.07);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+
+            &.head_cell-meal {
+                min-height: 90px;
+
+                &:nth-child(6) {
+                    border-bottom: 0;
+                }
+            }
+
+            &.head_cell-workout {
+                font-size: 11px;
+                font-family: 'Helvetica Neue LT Std 55 Roman', sans-serif;
+                flex: auto;
+                border-bottom: 0;
+            }
+
+            &.head_spacer {
+                height: 37px;
+                border-top: 0;
+            }
+
+            &.head_spacer:first-child {
+                height: 51px;
+                border-top: 0;
+                border-bottom: 0;
+
+                & + .head_cell {
+                    border-top: 0;
+                }
+            }
+        }
+
+        .head_cell_hour-span {
+            font-family: 'Helvetica Neue LT Std 65 Medium', sans-serif;
+        }
+
+        .head_cell_period-span {
+            font-family: 'Helvetica Neue LT Std 45 Light', sans-serif;
+        }
+    }
+}

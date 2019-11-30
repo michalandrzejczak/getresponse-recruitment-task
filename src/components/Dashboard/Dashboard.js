@@ -3,6 +3,7 @@ import './Dashboard.scss';
 import ProgressBar from '../ProgressBar';
 import WeekSlider from '../WeekSlider';
 import ProteinSelect from '../ProteinSelect';
+import Plan from '../Plan';
 
 function Dashboard() {
     const week = 7;
@@ -16,7 +17,7 @@ function Dashboard() {
                 <ProteinSelect/>
             </header>
             <div className="dashboard_plan">
-
+                <Plan week={week} />
             </div>
             <footer className="dashboard_footer">
 

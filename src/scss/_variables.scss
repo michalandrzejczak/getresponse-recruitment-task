@@ -10,6 +10,9 @@ $border-color: #e9e9e9;
 $header-border-color: #efefef;
 $progress-bar-color: #dbdbdb;
 $slider-arrow-border-color: #c0c0c0;
+$guilt-free-font-color: #c2c2c2;
+$print-font-color: #a2a2a2;
 
+// exports to be used in .js component files
 :export { backgroundColor: $background-color; }
 :export { greenColor: $green-color; }
