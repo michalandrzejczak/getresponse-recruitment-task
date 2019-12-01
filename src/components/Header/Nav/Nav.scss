@@ -20,7 +20,7 @@
             color: darken($header-font-color, 20%);
         }
 
-        &.nav_link-active {
+        &.active {
             color: $orange-color;
 
             &::after {
@@ -53,13 +53,7 @@
                 padding-left: -0;
             }
 
-            &:hover {
-                color: darken($header-font-color, 20%);
-            }
-
-            &.nav_link-active {
-                color: $orange-color;
-
+            &.active {
                 &::after {
                     display:none;
                 }
