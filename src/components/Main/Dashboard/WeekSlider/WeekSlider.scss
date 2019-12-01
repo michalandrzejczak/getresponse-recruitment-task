@@ -47,10 +47,16 @@
         flex-basis: 100%;
 
         .week-slider_title {
-            width: 124px;
-            font-size: 32px;
+            width: 108px;
+            font-size: 28px;
             font-weight: 400;
             margin: 0 15px;
         }
+
+      .week-slider_arrow-button {
+        width: 18px;
+        height: 32px;
+        border-radius: 6px;
+      }
     }
 }

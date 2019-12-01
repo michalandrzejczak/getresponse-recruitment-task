@@ -62,7 +62,7 @@ function Plan({week}) {
                 <div className="head-background head_cell head_cell-meal">{formatHour(getPlanHours().forth)}</div>
                 <div className="head-background head_cell head_cell-meal">{formatHour(getPlanHours().fifth)}</div>
                 <div className="head-background head_cell head_spacer"></div>
-                <div className="head-background head_cell head_cell-workout">Workout &#x25B8;</div>
+                <div className="head-background head_cell head_cell-workout">Workout <span className="head_cell-workout_chevron">&#x25B8;</span></div>
             </div>
             {generateWeek()}
         </div>

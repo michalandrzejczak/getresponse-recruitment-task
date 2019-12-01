@@ -30,7 +30,7 @@ function Dashboard() {
                     <FooterButton text="Buy now"/>
                 </section>
                 <section className="footer_section">
-                    <h1 className="footer_section_h1">Bod·<span className="footer_section_h1-special">ē</span> Trainer
+                    <h1 className="footer_section_h1">Bod·ē Trainer
                         in your pocket</h1>
                     <p className="footer_section_p">Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer
                         aliquet.</p>

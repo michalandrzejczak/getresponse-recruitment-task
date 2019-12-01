@@ -93,10 +93,10 @@ function Day({value, today = false, highCarb = false, guiltFree = false, first =
                     <DayMeal name={meals.third.name} img={meals.third.img}/>
                     <DayMeal name={meals.forth.name} img={meals.forth.img}/>
                     <DayMeal name={meals.fifth.name} img={meals.fifth.img}/>
-                    <div className={`day_cell day_cell-head day_cell-head-first ${first && 'day_cell-first'}`}>
+                    <div className={`day_cell day_cell-head day_cell-head-first ${first ? 'day_cell-first' : ''}`}>
                         <span className="day_cell-head_span">{highCarb ? 'high-carb' : 'low-carb'}</span>
                     </div>
-                    <div className={`day_cell day_cell-head ${first && 'day_cell-first'} day_cell-workout`}
+                    <div className={`day_cell day_cell-head ${first ? 'day_cell-first' : ''} day_cell-workout`}
                          onClick={toggleWorkout}>
                         {workoutDoneState ? (
                                 <img src={workoutDoneIcon} alt="Dumbbell, workout done"/>

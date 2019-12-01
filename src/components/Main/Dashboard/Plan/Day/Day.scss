@@ -2,156 +2,274 @@
 @import '../../../../../scss/main';
 
 .plan_day-active + .plan_day {
-    .day_cell {
-        border-left: 0;
-    }
+  .day_cell {
+    border-left: 0;
+  }
 }
 
 .plan_day-active ~ .plan_day {
-    .day_cell {
-        border-right: 1px solid rgba(0, 0, 0, 0.07);
-    }
+  .day_cell {
+    border-right: 1px solid rgba(0, 0, 0, 0.07);
+  }
 }
 
 .plan_day {
-    display: flex;
-    flex-direction: column;
-    width: 128px;
+  display: flex;
+  flex-direction: column;
+  width: 128px;
 
-    .day_cell {
-        border: 1px solid rgba(0, 0, 0, 0.07);
-        border-right: 0;
-        background-color: $block-background-color;
-        min-height: 33px;
-        padding: 10px;
+  .day_cell {
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-right: 0;
+    background-color: $block-background-color;
+    min-height: 33px;
+    padding: 10px;
 
-        &.day_cell-title {
-            color: $green-color;
-            font-family: 'Helvetica Neue LT Std 55 Roman', sans-serif;
-            font-size: 24px;
-            //line-height: 1.25em;
-            padding: 11px 10px;
-            text-transform: uppercase;
-            text-align: center;
-            border-top: 0;
-        }
-
-        &.day_cell-head {
-            flex: auto;
-            background: url("../../../../../img/plan-head-background.jpg") repeat;
-
-            &.day_cell-head-first {
-                border-top: 0;
-                text-align: center;
-
-                .day_cell-head_span {
-                    text-transform: uppercase;
-                    font-family: 'Helvetica Neue LT Std 55 Roman', sans-serif;
-                    font-size: 11px;
-                }
-            }
-
-            &.day_cell-first {
-                border-left: 0;
-            }
-
-            &.day_cell-workout {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                user-select: none;
-                -ms-user-select: none;
-                -webkit-user-select: none;
-
-                &:hover {
-                    border-top: 1px solid $orange-color;
-                }
-
-                img {
-                    justify-self: center;
-                }
-
-                svg {
-                    margin-left: 6px
-                }
-            }
-        }
-
-        &:last-child {
-            border-bottom: 0;
-        }
-
-        &.day_cell-guiltfree {
-            height: 5 * 90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: "Helvetica Neue LT Std 45 Light", sans-serif;
-            font-size: 30px;
-            color: $guilt-free-font-color;
-
-            span {
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
-                white-space: nowrap;
-                text-transform: uppercase;
-                transform: rotate(-90deg);
-
-                .day_cell-guiltfree_img {
-                    transform: rotate(90deg);
-                    margin-right: 28px;
-                }
-            }
-        }
-
-        &.day_cell-print {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Helvetica Neue LT Std 55 Roman', sans-serif;
-            font-size: 18px;
-            color: $print-font-color;
-            cursor: pointer;
-
-            &:hover {
-                border-top: 1px solid $orange-color;
-            }
-
-            &:active {
-                border-top: 3px solid $orange-color;
-            }
-
-
-            svg {
-                margin-right: 13px;
-            }
-        }
+    &.day_cell-title {
+      color: $green-color;
+      font-family: 'Helvetica Neue LT Std 55 Roman', sans-serif;
+      font-size: 24px;
+      padding: 11px 10px;
+      text-transform: uppercase;
+      text-align: center;
+      border-top: 0;
     }
 
-    &.plan_day-active {
-        border: 2px solid $orange-color;
+    &.day_cell-head {
+      flex: auto;
+      background: url("../../../../../img/plan-head-background.jpg") repeat;
 
-        .day_cell {
-            border-left: 0;
-            border-right: 0;
+      &.day_cell-head-first {
+        border-top: 0;
+        text-align: center;
 
-            &.day_cell-title {
-                padding: 10px;
-                color: $orange-color;
-            }
-
-            &:last-child {
-                border-bottom: 0;
-                padding: 10px 10px 8px;
-            }
+        .day_cell-head_span {
+          text-transform: uppercase;
+          font-family: 'Helvetica Neue LT Std 55 Roman', sans-serif;
+          font-size: 11px;
         }
+      }
+
+      &.day_cell-first {
+        border-left: 0;
+      }
+
+      &.day_cell-workout {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+
+        &:hover {
+          border-top: 1px solid $orange-color;
+        }
+
+        img {
+          justify-self: center;
+        }
+
+        svg {
+          margin-left: 6px
+        }
+      }
     }
 
     &:last-child {
-        .day_cell {
-            border-right: 0;
-        }
+      border-bottom: 0;
     }
+
+    &:last-child {
+      .day_cell {
+        border-right: 0;
+      }
+    }
+
+    &.day_cell-guiltfree {
+      height: 5 * 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Helvetica Neue LT Std 45 Light", sans-serif;
+      font-size: 30px;
+      color: $guilt-free-font-color;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        white-space: nowrap;
+        text-transform: uppercase;
+        transform: rotate(-90deg);
+
+        .day_cell-guiltfree_img {
+          transform: rotate(90deg);
+          margin-right: 28px;
+        }
+      }
+    }
+
+    &.day_cell-print {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Helvetica Neue LT Std 55 Roman', sans-serif;
+      font-size: 18px;
+      color: $print-font-color;
+      cursor: pointer;
+
+      &:hover {
+        border-top: 1px solid $orange-color;
+      }
+
+      &:active {
+        border-top: 3px solid $orange-color;
+      }
+
+
+      svg {
+        margin-right: 13px;
+      }
+    }
+  }
+
+  &.plan_day-active {
+    border: 2px solid $orange-color;
+
+    .day_cell {
+      border-left: 0;
+      border-right: 0;
+
+      &.day_cell-title {
+        padding: 10px;
+        color: $orange-color;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+        padding: 10px 10px 8px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: $media-breakpoint) {
+  .plan_day-active + .plan_day {
+    .day_cell {
+      border-left: 1px solid rgba(0, 0, 0, 0.07);
+    }
+  }
+
+  .plan_day-active ~ .plan_day {
+    .day_cell {
+      border-right: 1px solid rgba(0, 0, 0, 0.07);
+    }
+  }
+
+  .plan_day {
+    flex-direction: row;
+    width: 0;
+
+    .day_cell {
+      border: 1px solid rgba(0, 0, 0, 0.07);
+      background-color: $block-background-color;
+      min-height: 33px;
+      padding: 5px;
+      min-width: 100px;
+
+      &.day_cell-title {
+        min-width: 80px;
+        font-size: 16px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.07);
+        border-left: 0;
+      }
+
+      &.day_cell-head {
+        min-width: 80px;
+
+        &.day_cell-head-first {
+          border-top: 1px solid rgba(0, 0, 0, 0.07);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        &.day_cell-first {
+          border-left: 1px solid rgba(0, 0, 0, 0.07);
+        }
+
+        &.day_cell-workout:hover {
+          border-top: 1px solid rgba(0, 0, 0, 0.07);
+        }
+      }
+
+      &:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+        border-right: none;
+      }
+
+      &.day_cell-guiltfree {
+        height: auto;
+        min-width: 100px * 5 + 80px;
+
+        span {
+          transform: none;
+
+          .day_cell-guiltfree_img {
+            transform: none;
+            margin-right: 28px;
+          }
+        }
+      }
+
+      &.day_cell-print {
+        font-size: 16px;
+
+        &:hover, &:active {
+          border-top: 1px solid rgba(0, 0, 0, 0.07);
+        }
+
+        svg {
+          margin-right: 6px;
+        }
+      }
+    }
+
+    &.plan_day-active {
+      border: none;
+
+      .day_cell {
+        border: 1px solid rgba(0, 0, 0, 0.07);
+        border-bottom: 1px solid $orange-color;
+
+        &.day_cell-title {
+          border-left: none;
+          padding: 10px;
+          color: $orange-color;
+        }
+
+        &:last-child {
+          border-right: none;
+          border-bottom: 1px solid $orange-color;
+        }
+      }
+    }
+
+    &:last-child {
+      .day_cell {
+        border-right: 1px solid rgba(0, 0, 0, 0.07);
+        border-bottom: none;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
 }

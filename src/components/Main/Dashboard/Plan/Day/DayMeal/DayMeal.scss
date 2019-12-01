@@ -1,53 +1,73 @@
 @import '../../../../../../scss/variables';
 
 .plan_day {
-    .day_cell {
-        &.day_cell-meal {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 90px;
-            padding-bottom: 0;
-            cursor: pointer;
-            position: relative;
+  .day_cell {
+    &.day_cell-meal {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 90px;
+      padding-bottom: 0;
+      cursor: pointer;
+      position: relative;
 
-            &:hover {
-                border-top: 1px solid $orange-color;
-                background: $background-color;
-            }
+      &:hover {
+        border-top: 1px solid $orange-color;
+        background: $background-color;
+      }
 
-            img.day_cell-meal_checked {
-                position: absolute;
-                right: 6px;
-                opacity: 1;
-            }
+      img.day_cell-meal_checked {
+        position: absolute;
+        right: 6px;
+        opacity: 1;
+      }
 
-            .day_cell-meal_name-padding {
-                padding-right: 15px;
-                transition: none;
-            }
+      .day_cell-meal_name-padding {
+        padding-right: 15px;
+        transition: none;
+      }
 
-            img.day_cell-meal_img {
-                opacity: 0.66;
-                align-self: center;
-            }
+      img.day_cell-meal_img {
+        opacity: 0.66;
+        align-self: center;
+      }
 
-        }
     }
+  }
 }
 
 .plan_day-active {
-    .day_cell {
-        &.day_cell-meal {
-            color: #000;
-            font-weight: bold;
+  .day_cell {
+    &.day_cell-meal {
+      color: #000;
+      font-weight: bold;
 
-            img.day_cell-meal_img {
-                opacity: 1;
-            }
-        }
+      img.day_cell-meal_img {
+        opacity: 1;
+      }
     }
+  }
 }
 
+@media all and (max-width: $media-breakpoint) {
+  .plan_day {
+    .day_cell {
+      &.day_cell-meal {
+        min-height: 0;
+        padding: 8px;
+
+        &:hover {
+          border-top: 1px solid rgba(0, 0, 0, 0.07);
+          background: $block-background-color;
+        }
+
+        img.day_cell-meal_img {
+          width: 75%;
+          margin-bottom: -8px;
+        }
+      }
+    }
+  }
+}
 
 
