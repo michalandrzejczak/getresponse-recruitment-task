@@ -6,15 +6,15 @@ import chevron from '../../../img/chevron-down.png';
 
 function Profile({user}) {
     return (
-        <span className="profile">
-            <Link to="/profile/avatar" title="Change avatar" className="profile_image">
+        <Link to="/profile/edit" className="profile" title="Edit profile">
+            <div className="profile_image">
                 <img src={user.avatar} alt="User profile"/>
-            </Link>
-            <a href="#profile-dropdown" className="profile_dropdown">
+            </div>
+            <span className="profile_span">
                 <span className="profile_name">{user.full_name}</span>
                 <img src={chevron} alt="chevron-down"/>
-            </a>
-        </span>
+            </span>
+        </Link>
     );
 }
 

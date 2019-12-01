@@ -52,14 +52,41 @@ section#dashboard {
 
         header.dashboard_header {
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: flex-start;
             flex-wrap: wrap;
             margin: 0;
+
+            > * {
+                margin: 10px 20px;
+            }
         }
 
-        // @todo to do usunięcia
+
         footer.dashboard_footer {
-            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 30px;
+
+            section.footer_section {
+                padding: 10px;
+
+                &:first-child {
+                    padding: 10px;
+                    border-top: 1px solid $border-color;
+                }
+
+                &:not(:last-child) {
+                    border-right: none;
+                }
+
+                .footer_section_h1 {
+                    font-size: 14px;
+                }
+
+                .footer_section_p {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }

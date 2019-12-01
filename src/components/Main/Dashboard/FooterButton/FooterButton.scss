@@ -32,3 +32,30 @@
         box-shadow: 0 0 10px $button-border-color;
     }
 }
+
+@media all and (max-width: $media-breakpoint) {
+    .footer_section_button {
+        padding: 0 8px;
+        font-size: 12px;
+        border-radius: 5px;
+        height: 26px;
+
+        img.button_icon {
+            margin-right: 5px;
+            transform: scale(0.75);
+        }
+
+        svg {
+            margin-left: 7px;
+            transform: scale(0.75);
+        }
+
+        &:hover {
+            background-color: $block-background-color;
+        }
+
+        &:active {
+            box-shadow: 0 0 10px $button-border-color;
+        }
+    }
+}

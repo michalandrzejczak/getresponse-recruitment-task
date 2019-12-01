@@ -5,15 +5,6 @@
     display: flex;
     align-items: center;
 
-    .profile_dropdown {
-        color: $header-font-color;
-        display: flex;
-        align-items: center;
-
-        &:hover {
-            color: darken($header-font-color, 20%);
-        }
-    }
 
     .profile_image {
         display: flex;
@@ -25,17 +16,33 @@
         overflow: hidden;
         box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
 
-        &:hover {
-            box-shadow: 0 3px 2px rgba(0, 0, 0, .4);
-        }
-
         img {
             align-self: end;
         }
     }
 
-    .profile_name {
-        margin: 0 10px;
+    .profile_span {
+        color: $header-font-color;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: darken($header-font-color, 20%);
+        }
+
+        .profile_name {
+            margin: 0 10px;
+        }
+    }
+
+    &:hover {
+        .profile_image {
+            box-shadow: 0 3px 2px rgba(0, 0, 0, .4);
+        }
+
+        .profile_span {
+            color: darken($header-font-color, 20%);
+        }
     }
 }
 
@@ -44,24 +51,12 @@
         align-self: flex-start;
         margin: 5px 0;
 
-        .profile_dropdown {
-            order: 1;
-            width: 9px;
-            height: 9px;
-            padding: 6px;
-            border: 1px solid $border-color;
-            border-radius: 50%;
+        .profile_span {
+            display: none;
         }
 
         .profile_image {
-            order: 2;
             margin-left: 5px;
         }
-
-        .profile_name {
-            margin: 0;
-            display: none;
-        }
     }
-
 }

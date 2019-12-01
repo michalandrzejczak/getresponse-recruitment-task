@@ -42,6 +42,7 @@
 
 @media all and (max-width: $media-breakpoint) {
     .nav {
+        display: none;
         .nav_link {
             height: auto;
             padding: 10px 3px;
