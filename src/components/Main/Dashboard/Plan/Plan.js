@@ -8,23 +8,25 @@ function Plan({week}) {
         return 65; // simulation of getting day from API
     };
 
-    const generateWeek = () => {
+    const generateWeekTemplate = () => {
         let template = [];
         let day      = week * 9;
 
-        for (let i = 1; i <= 7; i++) {
+        for (let weekDay = 1; weekDay <= 7; weekDay++) {
             ++day;
 
             let isToday = day === getToday();
 
-            if (i % 3 === 0) {
-                template.push(<Day key={i} today={isToday} value={day} highCarb={true}/>);
+            if (weekDay % 3 === 0) {
+                template.push(<Day key={weekDay} today={isToday} value={day} highCarb={true}/>);
                 continue;
             }
-            if (i === 7) {
-                template.push(<Day key={i} today={isToday} value={day} guiltFree={true}/>);
+
+            if (weekDay === 7) {
+                template.push(<Day key={weekDay} today={isToday} value={day} guiltFree={true}/>);
             } else {
-                template.push(<Day workoutDone={isToday || i === 1} first={i === 1} key={i} today={isToday}
+                template.push(<Day workoutDone={isToday || weekDay === 1} first={weekDay === 1} key={weekDay}
+                                   today={isToday}
                                    value={day}/>);
             }
         }
@@ -67,7 +69,7 @@ function Plan({week}) {
                 <div className="head-background head_cell head_cell-workout">Workout <span
                     className="head_cell-workout_chevron">&#x25B8;</span></div>
             </div>
-            {generateWeek()}
+            {generateWeekTemplate()}
         </div>
     );
 }
