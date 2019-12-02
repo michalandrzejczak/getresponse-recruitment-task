@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.3fdfe3e7.chunk.css",
-    "main.js": "/static/js/main.47866abb.chunk.js",
-    "main.js.map": "/static/js/main.47866abb.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8518c23f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8518c23f.js.map",
-    "static/js/2.8de82bc4.chunk.js": "/static/js/2.8de82bc4.chunk.js",
-    "static/js/2.8de82bc4.chunk.js.map": "/static/js/2.8de82bc4.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.5c1b0441b7566b456ac98225157ec1d3.js": "/precache-manifest.5c1b0441b7566b456ac98225157ec1d3.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.3fdfe3e7.chunk.css.map": "/static/css/main.3fdfe3e7.chunk.css.map",
-    "static/media/FooterButton.scss": "/static/media/HelveticaNeueLTStdMd 1.c62cceb8.woff",
-    "static/media/bode-shake.png": "/static/media/bode-shake.cc9849ec.png",
-    "static/media/protein-steak-disabled.png": "/static/media/protein-steak-disabled.dbbb84f2.png",
-    "static/media/protein-steak.png": "/static/media/protein-steak.03bce23b.png"
+    "main.css": "/getresponse-recruitment-task/static/css/main.e30c35fa.chunk.css",
+    "main.js": "/getresponse-recruitment-task/static/js/main.de29b6ec.chunk.js",
+    "main.js.map": "/getresponse-recruitment-task/static/js/main.de29b6ec.chunk.js.map",
+    "runtime-main.js": "/getresponse-recruitment-task/static/js/runtime-main.19514152.js",
+    "runtime-main.js.map": "/getresponse-recruitment-task/static/js/runtime-main.19514152.js.map",
+    "static/js/2.8de82bc4.chunk.js": "/getresponse-recruitment-task/static/js/2.8de82bc4.chunk.js",
+    "static/js/2.8de82bc4.chunk.js.map": "/getresponse-recruitment-task/static/js/2.8de82bc4.chunk.js.map",
+    "index.html": "/getresponse-recruitment-task/index.html",
+    "precache-manifest.013e479ac86df1b1edc9ea7239385dad.js": "/getresponse-recruitment-task/precache-manifest.013e479ac86df1b1edc9ea7239385dad.js",
+    "service-worker.js": "/getresponse-recruitment-task/service-worker.js",
+    "static/css/main.e30c35fa.chunk.css.map": "/getresponse-recruitment-task/static/css/main.e30c35fa.chunk.css.map",
+    "static/media/FooterButton.scss": "/getresponse-recruitment-task/static/media/HelveticaNeueLTStdMd 1.c62cceb8.woff",
+    "static/media/bode-shake.png": "/getresponse-recruitment-task/static/media/bode-shake.cc9849ec.png",
+    "static/media/protein-steak-disabled.png": "/getresponse-recruitment-task/static/media/protein-steak-disabled.dbbb84f2.png",
+    "static/media/protein-steak.png": "/getresponse-recruitment-task/static/media/protein-steak.03bce23b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8518c23f.js",
+    "static/js/runtime-main.19514152.js",
     "static/js/2.8de82bc4.chunk.js",
-    "static/css/main.3fdfe3e7.chunk.css",
-    "static/js/main.47866abb.chunk.js"
+    "static/css/main.e30c35fa.chunk.css",
+    "static/js/main.de29b6ec.chunk.js"
   ]
 }
