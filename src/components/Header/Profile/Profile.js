@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './Profile.scss';
 import chevron from '../../../img/chevron-down.png';
@@ -17,5 +18,14 @@ function Profile({user}) {
         </Link>
     );
 }
+
+Profile.propTypes = {
+    user: PropTypes.shape({
+        first_name: PropTypes.string.isRequired,
+        last_name:  PropTypes.string.isRequired,
+        avatar:     PropTypes.string.isRequired,
+        full_name:  PropTypes.string.isRequired,
+    }),
+};
 
 export default Profile;

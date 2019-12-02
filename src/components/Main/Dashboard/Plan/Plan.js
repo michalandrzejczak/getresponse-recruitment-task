@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Plan.scss';
 import Day from './Day';
 
@@ -23,7 +24,8 @@ function Plan({week}) {
             if (i === 7) {
                 template.push(<Day key={i} today={isToday} value={day} guiltFree={true}/>);
             } else {
-                template.push(<Day workoutDone={isToday || i === 1} first={i === 1} key={i} today={isToday} value={day}/>);
+                template.push(<Day workoutDone={isToday || i === 1} first={i === 1} key={i} today={isToday}
+                                   value={day}/>);
             }
         }
 
@@ -62,11 +64,16 @@ function Plan({week}) {
                 <div className="head-background head_cell head_cell-meal">{formatHour(getPlanHours().forth)}</div>
                 <div className="head-background head_cell head_cell-meal">{formatHour(getPlanHours().fifth)}</div>
                 <div className="head-background head_cell head_spacer"></div>
-                <div className="head-background head_cell head_cell-workout">Workout <span className="head_cell-workout_chevron">&#x25B8;</span></div>
+                <div className="head-background head_cell head_cell-workout">Workout <span
+                    className="head_cell-workout_chevron">&#x25B8;</span></div>
             </div>
             {generateWeek()}
         </div>
     );
 }
+
+Plan.propTypes = {
+    week: PropTypes.number.isRequired,
+};
 
 export default Plan;

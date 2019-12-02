@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './Day.scss';
 import DayMeal from './DayMeal';
 import smileIcon from '../../../../../img/smile-icon.png';
@@ -110,5 +111,14 @@ function Day({value, today = false, highCarb = false, guiltFree = false, first =
         </div>
     )
 }
+
+Day.propTypes = {
+    value:       PropTypes.number.isRequired,
+    today:       PropTypes.bool,
+    highCarb:    PropTypes.bool,
+    guiltFree:   PropTypes.bool,
+    first:       PropTypes.bool,
+    workoutDone: PropTypes.bool,
+};
 
 export default Day;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './ProgressBar.scss';
 import BarStep from "./BarStep";
 import styleVariables from '../../../../scss/_variables.scss';
@@ -21,15 +22,21 @@ function ProgressBar({value, max}) {
             <span className="bar_title">Your {max} week progress</span>
             <div className="bar_wrapper">
                 {stepsCompleted.map(val =>
-                    <BarStep key={val} value={val} color={styleVariables.greenColor} fill={true} current={value} max={max}/>
+                    <BarStep key={val} value={val} color={styleVariables.greenColor} fill={true} current={value}
+                             max={max}/>,
                 )}
                 <BarStep key={value} value={value} current={value} max={max}/>
                 {stepsUncompleted.map(val =>
-                    <BarStep key={val} value={val} fill={true} current={value} max={max}/>
+                    <BarStep key={val} value={val} fill={true} current={value} max={max}/>,
                 )}
             </div>
         </div>
     );
 }
+
+ProgressBar.propTypes = {
+    value: PropTypes.number.isRequired,
+    max:   PropTypes.number.isRequired,
+};
 
 export default ProgressBar;

@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './FooterButton.scss';
-
 
 function FooterButton({href = '/', text, iconSrc}) {
     return (
@@ -19,5 +19,11 @@ function FooterButton({href = '/', text, iconSrc}) {
         </Link>
     );
 }
+
+FooterButton.propTypes = {
+    href:    PropTypes.string,
+    text:    PropTypes.string.isRequired,
+    iconSrc: PropTypes.string,
+};
 
 export default FooterButton;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './BarStep.scss';
 import styleVariables from '../../../../../scss/_variables.scss';
 
@@ -38,5 +39,13 @@ function BarStep({value, color = "#dbdbdb", fill = false, current, max}) {
         </span>
     )
 }
+
+BarStep.propTypes = {
+    value:   PropTypes.number.isRequired,
+    color:   PropTypes.string,
+    fill:    PropTypes.bool,
+    current: PropTypes.number.isRequired,
+    max:     PropTypes.number.isRequired,
+};
 
 export default BarStep;

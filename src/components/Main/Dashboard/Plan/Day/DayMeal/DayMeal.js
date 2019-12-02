@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './DayMeal.scss';
 import mealCheckedIcon from '../../../../../../img/meal-checked-icon.png';
 
@@ -20,5 +21,11 @@ function DayMeal({name, img, checked = false}) {
         </div>
     )
 }
+
+DayMeal.propTypes = {
+    name:    PropTypes.string.isRequired,
+    img:     PropTypes.string,
+    checked: PropTypes.bool,
+};
 
 export default DayMeal;
