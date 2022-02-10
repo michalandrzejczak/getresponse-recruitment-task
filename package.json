@@ -32,7 +32,7 @@
         "gulp-rename": "^1.4.0",
         "gulp-ruby-sass": "^4.0.0",
         "gulp-uglify": "^3.0.2",
-        "node-sass": "^4.13.0",
+        "node-sass": "^7.0.0",
         "prop-types": "^15.7.2",
         "react-router-dom": "^5.1.2",
         "run-sequence": "^2.2.1"
